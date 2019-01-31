@@ -47,14 +47,9 @@ const sortButton = (arr, title, key, operator) => {
     button.innerHTML = title;
     button.addEventListener('click', () => {
         sort(arr, key, operator);
-        addAndRemove(arr);
+        root.appendChild(allBoxes(arr))
     })
     return button;    
-}
-
-const addAndRemove = (arr) => {
-    fruitsContainer.parentNode.removeChild(fruitsContainer);
-    root.appendChild(allBoxes(arr))
 }
 
 const run = () => {
