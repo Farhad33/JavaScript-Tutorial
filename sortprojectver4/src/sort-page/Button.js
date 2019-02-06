@@ -3,7 +3,7 @@ import './button.css';
 
 class Button extends Component {
     onClick = () => {
-        console.log("yayayay");
+        this.props.reRender(this.props.keys, this.props.operator);
     }
 
     render() {
